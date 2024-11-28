@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Project n1</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <script>fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    })
+    .catch(error => console.error('Error loading header:', error));</script>
+    <div class="header">
+
+        
+        <div class="blockh">
+            <img src="logo.png">
+
+    
+                <div class="miniblockh1"><a href="">Visitor Info</a></div>
+                <div class="miniblockh1"><a href="">Top Caves</a></div>
+                <div class="miniblockh1"><a href="aboutus.html">About us</a></div>
+                <div class="miniblockh1"><a href="untitled.html">Home</a></div>
+
+        </div>
+
+        <h1 style=" margin-top: 1vh; ">Travel with Cavee</h1>
+
+        <h2 style="margin-left: 1vh; ">Discover the underground miracles...</h2>
+
+    </div>
+
+    <!-- Introductory Text -->
+    <div class="intro">
+        <p>Discover the unique world of caves in Slovakia, a country that hides some of Europe's most spectacular underground treasures.</p>
+        <p>Fascinating geological formations, a rich history, and a diverse ecosystem await you.</p>
+
+        <a href="caves_intro.html" class="cta-button">Explore Now</a>
+    </div>
+
+
+    <!-- Main -->
+    <div class="main">
+        <div class="content-between-lines">
+            <p>
+                Here, you’ll find detailed information about the history, geology, and fauna of these captivating natural formations, along with practical tips for tourists and adventure enthusiasts.
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="bottom">
+        <div class="bottom_logo">
+            <img src="logo.png" alt="Cavee Logo">
+        </div>
+        <div class="social_bottom">
+            <a href="https://instagram.com"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://facebook.com"><img src="facebook.png" alt="Facebook"></a>
+        </div>
+        <div class="bottom-links">
+            <a href="aboutus.html">About Us</a>
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+    </div>
+
+
+    <!------------------------------->
+    <!--<div class="features">
+        <div class="feature">
+            <img src="cave1.jpg" alt="Cave 1">
+            <h3>Ochtinská Aragonite Cave</h3>
+            <p>A unique and rare cave known for its aragonite formations.</p>
+        </div>
+        <div class="feature">
+            <img src="cave2.jpg" alt="Cave 2">
+            <h3>Domica Cave</h3>
+            <p>A UNESCO World Heritage Site with beautiful limestone formations.</p>
+        </div>
+    </div>-->
+
+</body>
+</html>
+
